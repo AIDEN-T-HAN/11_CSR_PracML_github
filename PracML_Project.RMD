@@ -89,6 +89,7 @@ Then, we estimate the performance of the model on the validation data set.
 predictRf <- predict(modelRf, testData)
 confusionMatrix(testData$classe, predictRf)
 ```
+
 ```{r, cache = T}
 accuracy <- postResample(predictRf, testData$classe)
 accuracy
